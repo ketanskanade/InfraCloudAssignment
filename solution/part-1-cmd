@@ -1,0 +1,1 @@
+docker run -d -it -p 9393:9300 --env CSVSERVER_BORDER=Orange --mount type=bind,source="$(pwd)"/inputFile,target=/csvserver/inputdata,readonly infracloudio/csvserver
